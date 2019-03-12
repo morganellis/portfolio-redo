@@ -1,0 +1,28 @@
+@import url("//cloud.typography.com/7384272/724808/css/fonts.css");
+
+@font-face {
+  font-family: "Slim Joe";
+  src: local("Slim Joe"), url("assets/fonts/Slim-Joe.otf");
+}
+
+@font-face {
+  font-family: "ZonaPro ExtraLight";
+  src: local("ZonaPro-ExtraLight"), url("assets/fonts/ZonaPro-ExtraLight.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Gotham A", "Gotham B";
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+}
