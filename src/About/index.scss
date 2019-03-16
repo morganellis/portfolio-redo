@@ -1,7 +1,75 @@
-// .about-wrap {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-// }
+.about-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+.left {
+  justify-content: flex-end;
+  width: 40vw;
+
+}
+
+.right {
+  justify-content: flex-start;
+  width: 45vw;
+}
+
+.my-face {
+  width: 30vw;
+}
+
+.stack-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40vw;
+  position: relative;
+}
+
+.icon-txt-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-txt {
+  font-size: 25px;
+  color: white;
+}
+
+.icon {
+  width: 55px;
+  padding: 8px;
+}
+
+.mongo {
+  width: 60px;
+  margin-left: -4.5px;
+}
+
+.express {
+  width: 48px;
+}
+
+.express-xt {
+  margin-left: 2px;
+}
+
+.angular {
+  width: 60px;
+  margin-left: -4.5px;
+}

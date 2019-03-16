@@ -1,10 +1,201 @@
-.nav-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+// .nav-container {
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+//   position: fixed;
+//   font-family: "Gotham A", "Gotham B";
+//   width: 100%;
+//   height: 50px;
+//   background: rgba(0, 0, 255, 0.397);
+// }
+
+
+a {
+  color: #c4b19e;
+}
+
+
+/* nav */
+
+.nav {
+  // box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.466);
+  // box-shadow: 1px 1px 4px 0 black;
+  box-shadow: 1px 1px 4px 0  rgba(0, 0, 0, 0.815);
   position: fixed;
-  font-family: "Gotham A", "Gotham B";
   width: 100%;
-  height: 50px;
-  background: rgba(0, 0, 255, 0.397);
+  z-index: 9999999;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.815);
+  height: 100vh;
+}
+
+.nav li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover,
+.nav .menu-btn:hover {
+  // background-color: black;
+  background-color: rgba(0, 0, 0, 0.466);
+  
+}
+
+.nav .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+/* menu icon */
+
+.nav .menu-icon {
+  cursor: pointer;
+  // display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.nav .menu-icon .navicon {
+  background: #c4b19e;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .5s ease-out;
+  width: 18px;
+}
+
+.nav .menu-icon .navicon:before,
+.nav .menu-icon .navicon:after {
+  // background: #333;
+  background: #c4b19e;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .5s ease-out;
+  width: 100%;
+}
+
+.nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.nav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.nav .menu-btn {
+  display: none;
+}
+
+.nav .menu-btn:checked~.menu {
+  // max-height: 240px;
+  max-height: 100vh;
+}
+
+.nav .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.nav .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.nav .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .nav li {
+    float: left;
+  }
+
+  .nav li a {
+    padding: 20px 30px;
+  }
+
+  .nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .nav .menu-icon {
+    display: none;
+  }
+}
+
+
+/* section */
+
+.section {
+  overflow: hidden;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.section a {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.section a img {
+  width: 100%;
+  display: block;
+}
+
+.section a span {
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  font-size: 2em;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.section-split a span {
+  display: none;
+}
+
+.section-split a:hover span {
+  display: block;
+}
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .section-split a {
+    width: 50%;
+  }
 }
