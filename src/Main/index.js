@@ -17,25 +17,19 @@ export default class Main extends Component {
       navigation: true,
       // responsiveWidth: 768,
       scrollBar: !0,
-      navigation: !0,
+      navigation: false,
       navigationPosition: "right",
       keyboardScrolling: !0,
       normalScrollElements: "#normal-scroll",
-      scrollingSpeed: 750,
-
-      // anchors: ["header", "about", "projects", "contact"],
       licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
     });
-    
   }
 
   render() {
     return (
       <div className="main-wrap">
-        {/* <div className="nav">
-          <Nav />
-        </div> */}
-        <div id="fullpage">
+        <div>
+        {/* <div id="fullpage"> */}
           <section className="section header-section" id="header" name="header">
             <Header />
           </section>

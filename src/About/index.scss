@@ -18,18 +18,56 @@
 
 .left {
   justify-content: flex-end;
-  width: 40vw;
-
+  margin-right: 50px;
+  // width: 45vw;
 }
 
 .right {
   justify-content: flex-start;
-  width: 45vw;
+  // width: 45vw;
 }
 
 .my-face {
-  width: 30vw;
+  width: 35vw;
 }
+
+.abt-txt-hdr {
+  font-weight: 100;
+  font-size: 8vw;
+  color: #c4b19e;
+  font-family: "Slim Joe";
+  letter-spacing: 20px;
+
+  @media only screen and (min-width: 868px) {
+    font-size: 100px;
+  }
+}
+
+.abt-txt-para {
+  font-family: "Gotham A", "Gotham B";
+  color: white;
+  color: #c4b19e;
+  font-size: 16.5px;
+  padding-left: 9.5px;
+  width: 432px;
+  letter-spacing: 1px;
+}
+
+.abt-txt-para2 {
+  padding-top: 38px;
+}
+
+.underline {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: .15s ease-in-out;
+}
+
+.underline:hover {
+  color: white;
+}
+
+
 
 .stack-wrap {
   display: flex;
@@ -49,6 +87,12 @@
 .stack-txt {
   font-size: 25px;
   color: white;
+
+  @media only screen and (min-width: 1100px) {
+    font-size: 20px;
+
+  }
+
 }
 
 .icon {
@@ -59,10 +103,14 @@
 .mongo {
   width: 60px;
   margin-left: -4.5px;
+
+  @media only screen and (min-width: 1100px) {}
 }
 
 .express {
   width: 48px;
+
+  @media only screen and (min-width: 1100px) {}
 }
 
 .express-xt {
@@ -72,4 +120,8 @@
 .angular {
   width: 60px;
   margin-left: -4.5px;
+
+  @media only screen and (min-width: 1100px) {
+    width: 40px;
+  }
 }
