@@ -68,6 +68,12 @@
   @media only screen and (max-width: 868px) {
     width: 350px;
   }
+
+  @media only screen and (max-width: 460px) {
+    width: 275px;
+    width: 300px;
+    padding-top: 5px;
+  }
 }
 
 .abt-txt-hdr {
@@ -91,8 +97,13 @@
   display: none;
 
   @media only screen and (max-width: 868px) {
-  letter-spacing: 12px;
-  display: inline;
+    text-align: center;
+    letter-spacing: 12px;
+    display: inline;
+  }
+
+  @media only screen and (max-width: 460px) {
+    font-size: 82px;
   }
 }
 
@@ -126,6 +137,16 @@
 
   @media only screen and (max-width: 868px) {
     padding-left: 0;
+  }
+
+  @media only screen and (max-width: 460px) {
+    font-size: 12.2px;
+    width: 356px;
+  }
+
+  @media only screen and (max-width: 350px) {
+    font-size: 10px;
+    width: 301px;
   }
 }
 
