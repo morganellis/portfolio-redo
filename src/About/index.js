@@ -73,6 +73,8 @@ export default class COMPONENT extends Component {
     return (
       <div className="about-wrap wrap">
         <div className="left">
+        <p className="abt-txt-hdr-top abt-txt-hdr fade-right-abt1">HELLO</p>
+
           <img
             className="my-face fade-left"
             src={require("../assets/img/portrait.png")}
@@ -81,22 +83,23 @@ export default class COMPONENT extends Component {
         </div>
         <div className="right">
           <div className="abt-txt-wrap">
-            <p className="abt-txt-hdr">HELLO</p>
-            <p className="abt-txt-para">
+            <p className="abt-txt-hdr-right abt-txt-hdr fade-right-abt1">HELLO</p>
+            <p className="abt-txt-para fade-right-abt2">
               My name is Morgan Ellis. I'm a fullstack developer out of Salt
               Lake City, UT, specializing in the MEAN and MERN stacks. My
               passion is programming. I never thought that I would be one of
               those people who just flat-out love their work, but I am. One of
-              the best feelings in the world is that rush of satisfaction I get
-              when I figure out a great solution to a problem- especially when
-              it's a problem that I've never encountered before. I'm so
-              motivated by the necessity to continuously learn and the limitless
-              ability to grow that comes along with being a developer. I'm proud
-              to say that I am a person who just flat-out loves my work.
+              the most satisfying feelings in the world is that rush I get when
+              I figure out a great solution to a problem- especially when it's a
+              problem that I've never encountered before. I'm so motivated by
+              the necessity to continuously learn and the limitless ability to
+              grow that comes with being a developer. I'm proud to say
+              that I am a person who just flat-out loves my work.
             </p>
-            <p className="abt-txt-para abt-txt-para2">
-              Check out some of my <span className="underline">projects</span> below, or you can take a look at my
-              resume <span className="underline">here</span>.
+            <p className="abt-txt-para abt-txt-para2 fade-right-abt2">
+              Check out some of my <span className="underline">projects</span>{" "}
+              below, or you can take a look at my resume{" "}
+              <span className="underline">here</span>.
             </p>
           </div>
 
