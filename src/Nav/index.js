@@ -8,22 +8,26 @@ const ITEM_HEIGHT = 48;
 export default class Nav extends React.Component {
   render() {
     return (
-      <div className="nav-wrap">
-        <div className="nav-container">
-          <a className="nav" href="#about">
-            About
-          </a>
-          <a className="nav" href="#projects">
-            Projects
-          </a>
-          <a className="nav" href="#contact">
-            Contact
-          </a>
-          <Link to="/resume" className="nav-link">
-            Resume
-          </Link>
-        </div>
-      </div>
+      <nav className="nav">
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" for="menu-btn">
+          <span className="navicon" />
+        </label>
+        <ul className="menu">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <Link to="#contact">Resume</Link>
+          </li>
+        </ul>
+      </nav>
     );
   }
 }

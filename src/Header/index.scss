@@ -10,11 +10,10 @@
 .title {
   text-align: center;
   font-weight: 100;
-  // font-size: 45px;
   font-size: 11vw;
   color: #c4b19e;
   font-family: "Slim Joe";
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 868px) {
     font-size: 100px;
   }
 }
