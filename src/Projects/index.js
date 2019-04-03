@@ -4,74 +4,59 @@ import * as $ from "jquery";
 import "./index.scss";
 
 export default class Projects extends Component {
-  fadeUp1 = {
-    duration: 1000,
+  fadeLeft = {
+    duration: 1400,
     distance: "200px",
-    // viewFactor: 0.5,
-    origin: "bottom",
+    viewFactor: 0.5,
+    origin: "left",
     reset: true
   };
 
-  fadeUp2 = {
-    duration: 1000,
-    distance: "200px",
-    // viewFactor: 0.5,
-    origin: "bottom",
+  fadeRight1 = {
+    duration: 900,
+    distance: "100px",
+    origin: "right",
+    reset: !0
+  };
+
+  fadeRight2 = {
+    duration: 900,
+    distance: "100px",
+    origin: "right",
     delay: 100,
-    reset: true
-  };
-
-  fadeUp3 = {
-    duration: 1000,
-    distance: "200px",
-    // viewFactor: 0.5,
-    origin: "bottom",
-    delay: 200,
-    reset: true
+    reset: !0
   };
 
   componentDidMount() {
-    ScrollReveal().reveal(".fade-up1", this.fadeUp1);
-    ScrollReveal().reveal(".fade-up2", this.fadeUp2);
-    ScrollReveal().reveal(".fade-up3", this.fadeUp3);
-
+    ScrollReveal().reveal(".fadeLeft", this.fadeLeft);
+    ScrollReveal().reveal(".fadeRight1", this.fadeRight1);
+    ScrollReveal().reveal(".fadeRight2", this.fadeRight2);
   }
 
   render() {
     return (
       <div className="projects-wrap">
-        <div className="projects-container">
-          <div className="project-image-container fade-up1">
-            <p className="project-title">SLC Weather</p>
+        <div className="project-sect">
+          <div className="left">
             <a className="project-link" href="http://slc-weather.surge.sh/">
               <img
-                className="project-image"
+                className="project-img fadeLeft"
                 src={require("../assets/img/slc-weather.jpg")}
-                alt="SLC Weather"
+                alt="Salt Lake City Weather"
               />
             </a>
           </div>
-
-          <div className="flashdeck project-image-container fade-up2">
-            <p className="project-title">flashDeck</p>
-            <a className="project-link" href="https://flashdeck-web-app.herokuapp.com/">
-              <img
-                className="project-image"
-                src={require("../assets/img/flashdeck.jpg")}
-                alt="Flashdeck"
-              />
-            </a>
-          </div>
-
-          <div className="set project-image-container fade-up3">
-            <p className="project-title">SET Online</p>
-            <a className="project-link" href="https://set-kutkurov-ellis-thomas.herokuapp.com/">
-              <img
-                className="project-image"
-                src={require("../assets/img/set.jpg")}
-                alt="SET"
-              />
-            </a>
+          <div className="right">
+            <p className="project-title fadeRight1">Salt Lake City Weather</p>
+            <p className="project-desc fadeRight2">
+              We accept the fact that we had to sacrifice a whole Saturday in
+              detention for whatever it is we did wrong, but we think you’re
+              crazy for making us write an essay telling you who we think we
+              are. You see us as you want to see us, in the simplest terms, in
+              the most convenient definitions. But what we found out, is that
+              each one of us is a brain, and an athlete, and a basket-case, a
+              princess, and a criminal. Does that answer your question?
+            </p>
           </div>
         </div>
       </div>

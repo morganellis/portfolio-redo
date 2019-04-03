@@ -1,42 +1,70 @@
 .projects-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
 }
 
-.projects-container {
+.project-sect {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   width: 100vw;
+
+  @media only screen and (max-width: 868px) {
+    flex-direction: column;
+    margin-top: 50px;
+    height: 100%;
+  }
 }
 
-.project-image-container {
+.left,
+.right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // width: 45vw;
 }
 
-.project-title {
-  color: white;
-  font-size: 32px;
-  padding-bottom: 25px;
+.left {
+  justify-content: flex-end;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
-.project-link {
-  cursor: pointer;
+.right {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 50px;
+  height: 408px;
 }
 
-.project-image {
-  cursor: pointer;
-  width: 28vw;
-  transition: ease-in-out;
-  transition-duration: .25s;
+.project-img {
+  height: 400px;
+  width: auto;
+
+  @media only screen and (max-width: 868px) {
+    height: auto;
+    width: 60vw;
+  }
+
 }
 
 .project-image:hover {
   transform: scale(1.1)
+}
+
+.project-title,
+.project-desc {
+  color: white;
+}
+
+.project-title {
+  // font-family: "Slim Joe";
+  font-weight: 100;
+  font-size: 40px;
 }

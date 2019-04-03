@@ -16,7 +16,6 @@ export default class COMPONENT extends Component {
     duration: 900,
     distance: "100px",
     origin: "right",
-    // delay: 200,
     reset: !0
   };
 
@@ -25,30 +24,6 @@ export default class COMPONENT extends Component {
     distance: "100px",
     origin: "right",
     delay: 100,
-    reset: !0
-  };
-
-  fadeRightAbt3 = {
-    duration: 900,
-    distance: "100px",
-    origin: "right",
-    delay: 200,
-    reset: !0
-  };
-
-  fadeRightAbt4 = {
-    duration: 900,
-    distance: "100px",
-    origin: "right",
-    delay: 300,
-    reset: !0
-  };
-
-  fadeRightAbt5 = {
-    duration: 900,
-    distance: "100px",
-    origin: "right",
-    delay: 400,
     reset: !0
   };
 
@@ -73,17 +48,19 @@ export default class COMPONENT extends Component {
     return (
       <div className="about-wrap wrap">
         <div className="left">
-        <p className="abt-txt-hdr-top abt-txt-hdr fade-right-abt1">HELLO</p>
-
+          <p className="abt-txt-hdr-top abt-txt-hdr fade-right-abt1">HELLO</p>
           <img
             className="my-face fade-left"
             src={require("../assets/img/portrait.png")}
             alt="This is my face!"
           />
         </div>
+
         <div className="right">
           <div className="abt-txt-wrap">
-            <p className="abt-txt-hdr-right abt-txt-hdr fade-right-abt1">HELLO</p>
+            <p className="abt-txt-hdr-right abt-txt-hdr fade-right-abt1">
+              HELLO
+            </p>
             <p className="abt-txt-para fade-right-abt2">
               My name is Morgan Ellis. I'm a fullstack developer out of Salt
               Lake City, UT, specializing in the MEAN and MERN stacks. My
@@ -93,8 +70,8 @@ export default class COMPONENT extends Component {
               I figure out a great solution to a problem- especially when it's a
               problem that I've never encountered before. I'm so motivated by
               the necessity to continuously learn and the limitless ability to
-              grow that comes with being a developer. I'm proud to say
-              that I am a person who just flat-out loves my work.
+              grow that comes with being a developer. I'm proud to say that I am
+              a person who just flat-out loves my work.
             </p>
             <p className="abt-txt-para abt-txt-para2 fade-right-abt2">
               Check out some of my <span className="underline">projects</span>{" "}
@@ -102,52 +79,6 @@ export default class COMPONENT extends Component {
               <span className="underline">here</span>.
             </p>
           </div>
-
-          {/* <div className="stack-wrap">
-            <div className="icon-txt-wrap fade-right-abt1">
-              <img
-                className="mongo icon"
-                src={require("../assets/img/mongodb.png")}
-                alt="MongoDB"
-              />
-              <p className="mongo-txt stack-txt">MongoDB </p>
-            </div>
-
-            <div className="icon-txt-wrap fade-right-abt2">
-              <img
-                className="express icon"
-                src={require("../assets/img/express.png")}
-                alt="Express.js"
-              />
-              <p className="express-txt stack-txt">&nbsp;Express.js</p>
-            </div>
-
-            <div className="icon-txt-wrap fade-right-abt3">
-              <img
-                className="angular icon"
-                src={require("../assets/img/angular.png")}
-                alt="Angular.js"
-              />
-              <p className="angular-txt stack-txt">Angluar.js</p>
-            </div>
-            <div className="icon-txt-wrap fade-right-abt4">
-              <img
-                className="icon angular"
-                src={require("../assets/img/react.png")}
-                alt="React.js"
-              />
-              <p className="react-txt stack-txt">React.js</p>
-            </div>
-
-            <div className="icon-txt-wrap fade-right-abt5">
-              <img
-                className="node icon"
-                src={require("../assets/img/node.png")}
-                alt="Node.js"
-              />
-              <p className="node-txt stack-txt">Node.js</p>
-            </div> 
-          </div>*/}
         </div>
       </div>
     );
